@@ -37,8 +37,13 @@ int main()
 		cout << endl;
 
 		char symbol;
-		cout << "Enter the symbol, you want to find: " << endl;
-		cin >> symbol;
+		while (true)
+		{
+			cout << "Enter the symbol, you want to find (A, B, C, D, E, F): " << endl;
+			cin >> symbol;
+			if ((symbol >= 65) && (symbol <= 70)) break;
+			cout << "Error! Try again...";
+		}
 
 		int b[N] = { 0 };
 		int k = 0;
