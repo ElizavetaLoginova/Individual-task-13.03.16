@@ -32,7 +32,7 @@ int main()
 		}
 
 		SortExchange(a, n);
-		cout << "Sorted array: " << endl;
+		cout << endl << "Sorted array: " << endl;
 		DisplayArray(a, n);
 		cout << endl;
 
