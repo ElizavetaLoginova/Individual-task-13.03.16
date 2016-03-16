@@ -17,8 +17,7 @@ int main()
 	while (true)
 	{
 		int n = EnterDimention(258);
-		int* a = new int[n + 1];
-		a[n] = '\0';
+		int* a = new int[n];
 		EnterArray(a, n);
 		system("cls");
 		cout << "Source array: " << endl;
@@ -46,8 +45,7 @@ int main()
 		}
 
 		int k = 0;
-		int* b = new int[k + 1];
-		a[k] = '\0';
+		int* b = new int[k];
 		ToMakeTheArray(a, n, symbol, b, k);
 
 		cout << endl << "The old array is: " << endl;
